@@ -3,9 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/User/IdeaProjects/MovieSearch/app/src/main/res/drawable/rounded_corner.xml" value="0.142" />
         <entry key="..\:/Users/User/IdeaProjects/MovieSearch/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/Users/User/IdeaProjects/MovieSearch/app/src/main/res/layout/activity_movie_details.xml" value="0.2" />
-        <entry key="..\:/Users/User/IdeaProjects/MovieSearch/app/src/main/res/layout/fragment_movies_details.xml" value="0.21403508771929824" />
+        <entry key="..\:/Users/User/IdeaProjects/MovieSearch/app/src/main/res/layout/fragment_movies_details.xml" value="0.2" />
+        <entry key="..\:/Users/User/IdeaProjects/MovieSearch/app/src/main/res/layout/fragment_movies_list.xml" value="0.4" />
       </map>
     </option>
   </component>
