@@ -12,9 +12,5 @@
         restore balance to the universe.
     </string>
     <string name="first_film_cast">Cast</string>
-    <string name="first_film_actor1">Robert Downey Jr.</string>
-    <string name="first_film_actor2">Chris Evans</string>
-    <string name="first_film_actor3">Mark Ruffalo</string>
-    <string name="first_film_actor4">Chris Hemsworth</string>
     <string name="first_film_length">137 MIN</string>
 </resources>

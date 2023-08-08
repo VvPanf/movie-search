@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.RecyclerView
 
 class MoviesDetails : Fragment() {
     override fun onCreateView(
@@ -13,5 +14,16 @@ class MoviesDetails : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_movies_details, container, false)
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        val actors = getActorList()
+        val adapter = ActorsAdapter(actors).apply {
+            setHasStableIds(true)
+        }
+        view.findViewById<RecyclerView>(R.id.actor_list)?.also {
+            it.setHasFixedSize(true)
+            it.adapter = adapter
+        }
     }
 }
