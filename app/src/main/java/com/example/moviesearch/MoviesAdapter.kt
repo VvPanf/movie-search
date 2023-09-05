@@ -8,6 +8,7 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
+import coil.load
 
 class MoviesAdapter(
     private var movies: List<Movie>
@@ -41,8 +42,9 @@ class MoviesAdapter(
         }
 
         fun bind(movie: Movie) {
-            val idField = R.drawable::class.java.getDeclaredField(movie.image)
-            this.image.setImageResource(idField.getInt(idField))
+            this.image.load(movie.image) {
+                crossfade(true)
+            }
             this.age.text = movie.age.toString() + "+"
             this.like.setImageResource(if (movie.like) R.drawable.ic_like else R.drawable.ic_not_like)
             this.genre.text = movie.genre
